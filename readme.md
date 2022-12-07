@@ -7,6 +7,6 @@ It is an app of my daily plan, once I select completed the plan should deleted, 
 [TRELLO BOARD](https://trello.com/invite/b/rbCBuC5T/ATTI34754efb405c6434ca3f0d1f5ea306bcA8CFCD82/project2)
 
 ## Mockup
-![display page](https://imgur.com/fDWAWpA)
+![display page](https://i.imgur.com/fDWAWpA.jpg)
 
-![after tasks have been added]((https://i.imgur.com/VJsFYY5.jpg))
+![after tasks have been added](https://i.imgur.com/VJsFYY5.jpg)
