@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../partials/head.ejs') %>
+
+    <body>
+        <%- include('../partials/header.ejs') %>
+
+
+        <main>
+            <div>
+              <form action="/todos" method="POST">
+                <fieldset>
+                    <legend>Add New ToDo</legend>
+
+                    <label>
+                        NAME: <input type="text" name="name" placeholder="enter todo name" />
+                    </label>
+                         
+                    <label>
+                        COMPLETED: <input type="checkbox" name="completed" />
+                    </label>    
+                </fieldset>
+                
+                <input type="submit" value="Add New ToDo" />
+              </form>        
+
+            </div>
+        </main>
+    </body>
+</html>
