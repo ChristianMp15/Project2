@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+    <link rel="stylesheet" href="./styles.css">
     <%- include('../partials/head.ejs') %>
 
     <body>
@@ -9,16 +10,18 @@
         <main>
             <div class="container">
                 <a>
-                    <form action="/" method="POST" autocomplete="off">
-                        <input type="text" placeholder="Add plan" name="todoValue" required>
-                        <button type="submit">Add a Plan</button>
+                    <form action="/todos" method="POST" autocomplete="off">
+                        <input type="text" placeholder="Add plan" name="name" required>
+                        <input type="text" name="time">
+                      <a href="/todos/new " > <button type="submit">Add a Plan</button>
                     </form>
 
 
                    
                 </a>
              <% todos.forEach((todo, index) => { %>  
-                <a href="/todo/<%= todo.id  %> "><h3><%= todo.name  %> </h3> %> </a>
+                <a href="/todos/<%= todo.id  %> ">
+                    <h3><%= todo.name  %> - <%= todo.isComplete? "Complete" : "Not Completed"  %> </h3> %> </a>
 
              <% }) %>
 

@@ -36,7 +36,7 @@ router.post("/", async (req, res) =>{
 
     req.body.complete = Boolean(req.body.complete)
     await Todo.create(req.body).catch((error) => errorHandler(error, res))
-    res.redirect("/todo")
+    res.redirect("/todos")
 })
 
 

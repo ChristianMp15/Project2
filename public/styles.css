@@ -1,14 +1,18 @@
-header{
-    background-color: aqua;
+header h1{
+    color: aqua;
     font-style: italic;
 }
 *{
     padding: 0;
     margin: 0;
+    background-color: aquamarine;
 }
 
 body {
     background: lightskyblue;
+}
+form {
+    background-color: bisque;
 }
 
 .container {
