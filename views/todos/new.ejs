@@ -6,28 +6,11 @@
         <%- include('../partials/header.ejs') %>
 
 
-        <main>
-            <div>
-              <form action="/todos" method="POST">
-                <fieldset>
-                    <legend>Add New Plan</legend>
+        <h1>Create New To do</h1>
+        <form action="/todos" method="post"> 
+            <input type="name" name="name" placeholder="new plan">
+            <input type="name" name="time" placeholder="time">
+            <input type="checkbox" name="complete">
+            <input type="submit" value="My New Plan">
 
-                    <label>
-                        NAME: <input type="text" name="name" placeholder= "day plan" />
-                    </label>
-                    <label>
-                        TIME: <input type="text" name="name" placeholder="Time">
-                    </label>
-                         
-                    <label>
-                        COMPLETE: <input type="checkbox" name="complete" />
-                    </label>    
-                </fieldset>
-                
-                <input type="submit" value="Add New plan" />
-              </form>        
-
-            </div>
-        </main>
-    </body>
-</html>
+        </form>

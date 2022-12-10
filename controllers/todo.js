@@ -28,7 +28,17 @@ router.get('/',  (req, res) => {
 //New route
 
 router.get('/new', (req, res) => {
-    res.render("todo/new.ejs")
+    res.render("todos/new.ejs")
+})
+//Delete Route
+router.delete("/:id", async (req, res) => {
+    await Todo.findByIdAndRemove(req.params.id)
+    res.redirect("/todos")
+})
+//show route
+router.get("/:id", async (req, res) => {
+    const todo = await Todo.findById(req.params.id)
+    res.render("todos/show.ejs", {todo})
 })
 
 //Post Route

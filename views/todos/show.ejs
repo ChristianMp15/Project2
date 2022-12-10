@@ -2,5 +2,12 @@
 
 <h2>TIME: <%= todo.time %> </h2>
 
-<h3>COMPLETE: <%= todo.complete ? "YES" : "NO"  %> </h3>
-<a href="/todo"><h4>BACK TO MAIN PAGE</h4></a>
+<h3>COMPLETE: <%= todo.complete ? "done" : "Not complete"  %> </h3>
+
+<a href="/todos"><h4>BACK TO MAIN PAGE</h4></a>
+
+<form action="/todos/<%=todo._id  %>?_method=DELETE " method="post">
+    <input type="submit" value="delete">
+    
+</form>
+<a href="/todos"><h4>Back to Menu</h4></a>

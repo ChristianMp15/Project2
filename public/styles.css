@@ -1,19 +1,18 @@
 header h1{
-    color: aqua;
+    align-items: center;
+    color: red;
     font-style: italic;
 }
 *{
     padding: 0;
     margin: 0;
-    background-color: aquamarine;
+    background-color:aquamarine;
 }
 
 body {
     background: lightskyblue;
 }
-form {
-    background-color: bisque;
-}
+
 
 .container {
     width: 100%;
@@ -24,6 +23,7 @@ form {
 }
 
 h1{
+    text-align: center;
     padding: 3rem;
     font-size: 3rem;
     font-style: italic;
@@ -35,10 +35,18 @@ input {
     height: 2rem;
     border-radius: 10px 0 10px 0;
     border: solid 2px navy;
-    color: white;
+    color:black;
     font-size: 1rem;
     outline: none;
 }
 ::placeholder{
-    color:black;
+    color:red;
+}
+
+button{
+    display:inline;
+    
+    
+    color: red;
+
 }
