@@ -1,0 +1,8 @@
+<h1>Edit Plan<%= todo.name  %> </h1>
+        <form action="/todos/<%= todo._id  %>?_method=PUT " method="post"> 
+            <input type="name" name="name" placeholder="Edit plan" value="<%= todo.name  %> ">
+            <input type="name" name="time" placeholder="time" value="<%= todo.time  %>">
+            <input type="checkbox" name="complete" <%= todo.complete ? "checked" : "" %> >
+            <input type="submit" value="Edit Plan <%= todo.name  %>">
+
+        </form>

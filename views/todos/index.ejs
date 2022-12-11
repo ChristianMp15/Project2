@@ -4,26 +4,27 @@
     <%- include('../partials/head.ejs') %>
 
     <body>
+        <div class="wrapper">
         <%- include('../partials/header.ejs') %>
 
 
         <main>
-            <div class="container">
+            <div class="inputField">
                 <a>
                     <form action="/todos" method="POST" autocomplete="off">
                         <input type="text" placeholder="Add plan" name="name" required>
                        
-                      <a href="/todos/new " > <button type="submit">Add New Plan</button>
+                      <a href="/todos/new " > <button>Add</button>
                     </form>
 
-
+         </div>        
                    
                 </a>
              <% todos.forEach((todo, index) => { %>  
                 <a href="/todos/<%= todo.id  %> ">
+                    
                    
-                    <h3><%= todo.name  %> - <button><%= todo.isComplete? "Complete" : "Not Completed"  %> </h3> %> </a>
-                </button>
+                    <h3><%= todo.name  %> - <%= todo.isComplete? "Complete" : "Not Completed"  %> </h3> %> </a> 
 
              <% }) %>
 
