@@ -14,7 +14,7 @@
                     <form action="/todos" method="POST" autocomplete="off">
                         <input type="text" placeholder="Add plan" name="name" required>
                        
-                      <a href="/todos/new " > <button>Add</button>
+                        <a href="/todos/new " > <button>Add</button>
                     </form>
 
          </div>        
@@ -24,7 +24,7 @@
                 <a href="/todos/<%= todo.id  %> ">
                     
                    
-                    <h3><%= todo.name  %> - <%= todo.isComplete? "Complete" : "Not Completed"  %> </h3> %> </a> 
+                    <h3><%= todo.name  %> - <%= todo.complete ? "Complete" : "Not Completed"  %> </h3> %> </a> 
 
              <% }) %>
 

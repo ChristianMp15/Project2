@@ -2,13 +2,12 @@
 
 <h2>TIME: <%= todo.time %> </h2>
 
-<h3>COMPLETE: <%= todo.complete ? "done" : "Not complete"  %> </h3>
+<h3>COMPLETE: <%= todo.complete ? "Complete" : "Not completed"  %> </h3>
 
 
 <form action="/todos/<%=todo._id  %>?_method=DELETE " method="post">
     <input type="submit" value="delete">
     
 </form>
-
-<a href="/todos/<%= todo._id  %>/edit"></a><button>Edit</button>
+<a href="/todos/<%= todo._id  %>/edit"><button>Edit</button></a>
 <a href="/todos"><h4>Back to Menu</h4></a>
